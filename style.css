@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Lato:wght@300&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@600&display=swap');
+ * {
+     margin: 0;
+     padding: 0;
+     text-decoration: none;
+     box-sizing: border-box;
+     font-family: 'Lato', sans-serif;
+}
+ html {
+     scroll-behavior: smooth;
+}
+ body {
+     background-image: url(Imagens/bg2.png);
+     background-size: 100% 100%;
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+}
+ header {
+     background-color: #4f72ff;
+     height: 50px;
+     width: 100%;
+     padding: 5px 15px;
+     box-shadow: 0px 0px 4px black;
+     display: flex;
+     gap: 10px;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     align-content: center;
+     justify-content: space-between;
+}
+ header img {
+     width: 100%;
+}
+ .images {
+     width: 40px;
+     height: 40px;
+}
+ .apresent, .contact {
+     width: 50%;
+}
+ .apresent {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     align-content: center;
+     align-items: center;
+     gap: 15px;
+}
+ header h1 {
+     font-family: 'Cinzel', serif;
+     color: white;
+}
+ main {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 16% 2%;
+     flex-wrap: nowrap;
+     align-content: center;
+     justify-content: center;
+     gap: 40px;
+}
+ main h1 {
+     text-align: center;
+     text-transform: uppercase;
+     width: 65%;
+     color: white;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 40px;
+     text-shadow: 0px 0px 6px black;
+}
+ button {
+     padding: 15px;
+     width: 220px;
+     border-radius: 25px;
+     border: none;
+     background-color: #4f72ff;
+     color: white;
+     cursor: pointer;
+     font-size: 17px;
+     font-weight: 900;
+}
+ button:hover {
+     background-color: #728eff;
+}
+ .container-cards {
+     background-color: white;
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     align-content: center;
+     justify-content: center;
+     align-items: center;
+}
+ .cards {
+     border-radius: 5px;
+     width: 300px;
+     height: 340px;
+     padding: 17px;
+     margin: 15px;
+     box-shadow: 0px 0px 8px black;
+}
+ .cards h2 {
+     text-align: center;
+}
+ .img-container{
+     width: 100%;
+     height: 265px;
+     border-radius: 5px;
+     margin-bottom: 10px;
+     cursor: pointer;
+     overflow: hidden;
+}
+ .img-container img{
+     width: 100%;
+     height: 100%;
+     -webkit-transition: -webkit-transform .5s ease;
+     transition: transform .5s ease;
+}
+ .img-container:hover img{
+     -webkit-transform: scale(1.2);
+     transform: scale(1.2);
+}
+ .container-maps {
+     background-color: white;
+     padding: 10px;
+     padding-bottom: 40px;
+     height: 560px;
+     display: flex;
+     flex-direction: column;
+     flex-wrap: nowrap;
+     align-content: center;
+     justify-content: center;
+     align-items: center;
+     gap: 10px;
+}
+ .container-maps iframe {
+     width: 90%;
+     height: 80%;
+     border: none;
+     border-radius: 10px;
+}
+ .container-maps h1 {
+     font-family: 'Cinzel', serif;
+     border-bottom: 2px solid black;
+     padding-bottom: 5px;
+     margin-bottom: 10px;
+}
+ ::-webkit-scrollbar{
+     width:5px;
+     padding-top:40px;
+}
+ ::-webkit-scrollbar-thumb{
+     border-radius:20px;
+     height:20px;
+     width:5px;
+     border:0 solid black;
+     background-color:#4f72ff;
+}
+ ::-webkit-scrollbar-track{
+     box-shadow:inset 0 0 0 rgb(0 0 0 / 0%);
+     border:0 solid black;
+     background:#15161800;
+     border-radius:0;
+     margin-top:0;
+     margin-bottom:0;
+}
+ .join-types {
+     position: fixed;
+     top: 40%;
+     width: 200px;
+     left: -13%;
+     background-color: white;
+     padding: 8px;
+     border-bottom-right-radius: 15px;
+     border-top-right-radius: 15px;
+     transition: all 400ms ease;
+}
+ .join-types:hover, .join-types:focus, .join-types:active {
+     left: 0%;
+}
+ .join-types ul {
+     list-style: none;
+}
+ .join-types ul li {
+     color: #4f72ff;
+     font-weight: 900;
+     margin: 10px 5px;
+     cursor: pointer;
+}
+ @media (max-width:800px){
+    .join-types {
+        left: -18%;
+     }
+}
